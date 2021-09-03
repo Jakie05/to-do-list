@@ -4,70 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo App UI Web</title>
     <link rel="stylesheet" href="list.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Todo App</title>
   </head>
   <body>
-    <div class="main">
-      <center>
-        <div class="task">
-          <div><b>Tasks</b> Lists</div> 
-          <div> <small>+</small> Add List</div>
-        </div>
-      </center>
-      <br /><br />
-      <center>
-        <div class="card one">
-          <h3 class="fontchangep1">Trip to paris</h3>
+    <header class="header-all">
+      <h1>Tasks <span>Lists</span></h1>
+      <a href="#modal">
+        <i class="fas fa-plus-circle"></i>
+        <span>Add List</span>
+      </a>
+    </header>
+    <main class="main">
+      <div class="card">
+        <a href="./index2.html">Trip to Paris</a>
+        <hr />
+        <p class="task completed">Completed Task</p>
+        <p class="task pending">
+          <input type="checkbox" name="" id="" />
+          <span>Pending Task</span>
+        </p>
+      </div>
 
-          <div class="line"></div>
-          <br /><br>
-          <del><b>Completed task<b></del><br /><br />
-          <div class="empty">
-            <div></div>
-            <span>Pending Task</span>
-          </div>
-        </div>
-        <div class="card two">
-          <h3 class="fontchangep1">My Todo List</h3>
-          <div class="line"></div>
-          <br /><br>
-          <b><del>Completed task</del></b><br /><br />
-          <div class="empty">
-            <div></div>
-            <span>Pending Task</span>
-          </div>
-        </div>
-        <div class="card three">
-          <h3 class="fontchangep1">My Todo List</h3>
-          <div class="line"></div>
-          <br /><br>
-         <b> <del>Completed task</del></b><br /><br>
-          <div class="empty">
-            <div></div>
-            <span>Pending Task</span>
-          </div>
-        </div>
-      </center>
+      <div class="card">
+        <a href="./index2.html">Trip to Paris</a>
+        <hr />
+        <p class="task completed">Completed Task</p>
+        <p class="task pending">
+          <input type="checkbox" name="" id="" />
+          <span>Pending Task</span>
+        </p>
+      </div>
 
-      <div class="footer">
-        <center>
-          <a href="index.html"
-            ><img
-              src="images/home logo.jpg"
-              alt="home logo"
-              height="18px"
-              width="15px"
-          /></a>
-          <span class="change">
-            <a href="index3.html">&lt; </a> 1of4<a
-              href="index1.html"
-              class="arrow"
-            >
-              &gt;</a
-            ></span
-          >
-        </center>
+      <div class="card">
+        <a href="./index2.html">Trip to Paris</a>
+        <hr />
+        <p class="task completed">Completed Task</p>
+        <p class="task pending">
+          <input type="checkbox" name="" id="" />
+          <span>Pending Task</span>
+        </p>
+      </div>
+    </main>
+
+    <!-- Add New List Modal -->
+    <div class="modal" id="modal">
+      <a href="#"></a>
+      <div class="modal-content">
+        <h3>Add New List</h3>
+        <input type="text" name="newList" id="newList" />
+        <br />
+        <button type="submit">ADD</button>
       </div>
     </div>
   </body>
